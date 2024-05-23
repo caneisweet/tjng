@@ -1,0 +1,98 @@
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: skyblue;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin-left: 20%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.details {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px; 
+}
+
+.content h1{
+  text-align: center;
+  text-size: 50px;
+  margin: 0;
+}
+
+.content p{
+  text-align: center;
+}
+
+
+.card{
+  width: 350px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  align-items: center;
+  position: relative;
+}
+
+.head{
+  font-size: 15px;
+}
+
+.description {
+  color: grey;
+  padding: 0 10px 0 0;
+}
+
+.card img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.card button{
+  background-color: skyblue;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  left: 30%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.details {
+        margin-left: 0;
+    }
+}
